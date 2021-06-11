@@ -197,8 +197,7 @@ li a {
 .galeria {
   margin: 5px; }
   .galeria :hover {
-    cursor: pointer; }
-  .galeria :active {
+    cursor: pointer;
     transform: scale(2, 1.7);
     transition: all 0s ease;
     cursor: pointer; }

@@ -242,18 +242,11 @@ li a{
 
     :hover{
         cursor: pointer;
-    }
-    
-    :active{
         transform: scale(2,1.7);
         transition: all 0s ease;
         cursor: pointer;
     }
-
-
 }
-
-
 
 .fotos .contenedorImagenes{
     display: grid;
