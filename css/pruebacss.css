@@ -156,6 +156,12 @@ li a {
   background-position: center;
   background-attachment: fixed; }
 
+@media (max-width: 520px) {
+  .fotografo {
+    background-image: url(../imagenes/fotografo2.jpg);
+    background-position: 20%;
+    background-size: 900px 720px; } }
+
 .laAcademia {
   color: #d8af54;
   font-family: 'Montserrat', sans-serif;
@@ -198,13 +204,17 @@ li a {
   margin: 5px; }
   .galeria :hover {
     cursor: pointer;
-    transform: scale(2, 1.7);
+    transform: scale(1.1, 1);
     transition: all 0s ease;
     cursor: pointer; }
 
 .fotos .contenedorImagenes {
   display: grid;
   grid-template-columns: repeat(4, 1fr); }
+
+@media (min-width: 300px) {
+  .fotos .contenedorImagenes {
+    grid-template-columns: repeat(1, 100%); } }
 
 @media (min-width: 520px) {
   .fotos .contenedorImagenes {
@@ -239,7 +249,7 @@ li a {
 /*Titulo de cada taller*/
 .talleres {
   color: #d8af54;
-  font-weight: inherit;
+  font-weight: bolder;
   font-family: 'Montserrat', sans-serif;
   margin-left: 20px;
   margin-top: 20px;
@@ -258,9 +268,10 @@ li a {
   padding-left: 30px;
   background-color: #c1c6cc; }
 
+/*div vacio*/
 .bloque {
   width: 100%;
-  height: 150px; }
+  height: 100px; }
 
 .inscripcion {
   padding-top: 30px;
@@ -270,7 +281,8 @@ li a {
     color: khaki; }
 
 .article__talleres {
-  background-color: #F9FAFB; }
+  background-color: #ede8e8;
+  border: solid 0.5px gray; }
   .article__talleres p {
     padding: 30px; }
 
