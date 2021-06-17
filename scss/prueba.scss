@@ -201,7 +201,7 @@ li a{
 .laAcademia{
     color: $naranja-pixel;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 30px;
+    margin-left: 45px;
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -448,12 +448,10 @@ li a{
 }
 /*Footer fondo naranja*/
 .footer__blanco{
+    @extend .footer;
     background-color: $naranja-pixel;
-    font-size:15px;
-    line-height:24px;
     color: white;
-    border: khaki solid 1px;
-    padding-top: 10px;
+    
 }
 
 .ir-arriba{

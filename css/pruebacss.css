@@ -73,12 +73,14 @@ li a {
 .containerIndex > .header,
 .containerIndex > .contenido,
 .containerIndex > .aside,
-.containerIndex > .footer {
+.containerIndex > .footer,
+.containerIndex > .footer__blanco {
   background-color: #fff;
   opacity: 95%; }
 
 .header,
-.footer {
+.footer,
+.footer__blanco {
   grid-column: 1/5; }
 
 .contenidoIndex {
@@ -165,7 +167,7 @@ li a {
 .laAcademia {
   color: #d8af54;
   font-family: 'Montserrat', sans-serif;
-  margin-left: 30px;
+  margin-left: 45px;
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -321,7 +323,7 @@ li a {
   background-size: cover;
   background-color: #d8af54; }
 
-.containerContacto > .footer {
+.containerContacto > .footer, .containerContacto > .footer__blanco {
   opacity: 95%; }
 
 .contacto__titulo {
@@ -353,7 +355,9 @@ li a {
 
 /*FOOTER*/
 /*Footer fondo blanco*/
-.footer {
+
+.footer,
+.footer__blanco {
   background-color: white;
   font-size: 15px;
   line-height: 24px;
@@ -364,27 +368,22 @@ li a {
 /*Footer fondo naranja*/
 .footer__blanco {
   background-color: #d8af54;
-  font-size: 15px;
-  line-height: 24px;
-  color: white;
-  border: khaki solid 1px;
-  padding-top: 10px; }
+  color: white; }
 
 .ir-arriba {
   font-weight: bolder;
   color: black; }
 
-.footer hr {
+.footer hr, .footer__blanco hr {
   border-top-color: #bbb;
   opacity: 70%; }
 
-.footer hr.small {
+.footer hr.small, .footer__blanco hr.small {
   margin: 5px 0; }
 
 .footer-links {
   padding-left: 0; }
-  .footer-links list-style:none
-li {
+  .footer-links list-style:none li {
     display: block; }
   .footer-links a {
     color: #d8af54; }
@@ -397,10 +396,10 @@ li {
 .footer-links.inline li {
   display: inline; }
 
-.footer .social-icons {
+.footer .social-icons, .footer__blanco .social-icons {
   text-align: right; }
 
-.footer .social-icons a {
+.footer .social-icons a, .footer__blanco .social-icons a {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -418,15 +417,17 @@ li {
   text-align: center; }
 
 @media (max-width: 991px) {
-  .footer [class^=col-] {
+  .footer [class^=col-], .footer__blanco [class^=col-] {
     margin-bottom: 30px; }
-  .footer .copyright-text, .site-footer .social-icons {
+  .footer .copyright-text, .footer__blanco .copyright-text, .site-footer .social-icons {
     text-align: center; } }
 
 @media (max-width: 767px) {
-  .footer {
+  
+  .footer,
+  .footer__blanco {
     padding-bottom: 0; }
-  .footer .copyright-text, .site-footer .social-icons {
+  .footer .copyright-text, .footer__blanco .copyright-text, .site-footer .social-icons {
     text-align: center; } }
 
 .social-icons {
