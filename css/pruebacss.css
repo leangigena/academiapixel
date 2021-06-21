@@ -143,7 +143,9 @@
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   text-align: justify;
-  padding: 50px; }
+  padding: 50px;
+  color: gray;
+  font-weight: bold; }
 
 .containerPortfolio {
   font-family: 'Montserrat', sans-serif; }
@@ -160,6 +162,8 @@
 
 .parrafoPortfolio {
   padding: 30px;
+  color: gray;
+  font-weight: bold;
   background-color: #EBECED;
   text-align: center;
   padding: 20px 20px;
@@ -248,6 +252,9 @@
   text-align: center;
   text-align: center; }
 
+h4 {
+  font-weight: bold; }
+
 .tituloWorkshop {
   color: white;
   font-weight: bolder;
@@ -274,7 +281,9 @@
   background-color: #ede8e8;
   border: solid 0.5px gray; }
   .article__talleres p {
-    padding: 30px; }
+    padding: 30px;
+    color: gray;
+    font-weight: bold; }
 
 .linea {
   border-top: 1px solid gray;
