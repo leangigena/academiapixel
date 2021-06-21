@@ -1,0 +1,140 @@
+.containerIndex{
+    width: 100%;
+    background-image: url(../imagenes/portada.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-color: $naranja-pixel;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.6em;
+}
+
+.aside{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    width: 100%;
+    background-color: white;
+
+    .aside__titulo{
+        color: $naranja-pixel;
+        font-size: 1em;
+        text-align: center; 
+        font-weight: bold;
+}
+
+    .aside__texto{
+        padding-top: 15px;
+}
+}
+
+.aside__imagen:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.containerIndex > .header,
+.containerIndex > .contenido,
+.containerIndex > .aside,
+.containerIndex > .footer{
+    background-color: #fff;
+    opacity: 95%;
+}
+
+.header,
+.footer{
+    grid-column: 1/5;
+}
+
+.contenidoIndex{
+    grid-column: span 3;
+    padding: 20px;
+    
+    .contenidoIndex__articulo{
+        padding: 20px;
+        margin-top: 5px;
+        background: $naranja-pixel;
+        color: white;
+    }
+
+}
+
+.tituloBienvenidos{
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.parrafo{
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 20px;
+    text-align: justify;
+}
+
+@media screen and (max-width:1024px){
+    .contenidoIndex{
+        grid-column: span 4;        
+    }
+
+    .aside{
+        grid-column: 1/5;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }    
+}
+
+@media screen and (max-width:768px){
+    .contenidoIndex{
+        grid-column: 1/5;
+    }
+
+    .aside{
+        grid-column: 1/5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }    
+    .aside__texto{
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .aside__imagen:hover{
+        cursor: pointer;
+        opacity: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .contenidoIndex{
+        grid-column: 1/5;
+    }
+
+    .aside{
+        grid-column: 1/5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }    
+    .aside__texto{
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .aside__imagen:hover{
+        cursor: pointer;
+        opacity: 70%;
+    }
+
+}

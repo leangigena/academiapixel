@@ -1,0 +1,40 @@
+.containerAbout{
+    font-family: 'Montserrat', sans-serif;
+}
+/*imagen de fondo attached*/
+.fotografo{
+    width: 100%;
+    height: 300px;
+    background-image: url(../imagenes/fotografo.jpg);
+    background-color: wheat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (max-width:520px) {
+    .fotografo{
+        background-image: url(../imagenes/fotografo2.jpg);
+        background-position: 20%;
+        background-size: 900px 720px;
+    }    
+}
+/*titulo de la seccion*/
+.laAcademia{
+    color: $naranja-pixel;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 45px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+
+}
+
+.parrafoAcademia{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    padding: 50px;
+}

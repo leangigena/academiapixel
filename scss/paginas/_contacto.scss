@@ -1,0 +1,63 @@
+.containerContacto{
+    width: 100%;
+    margin: 0px auto;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-image: url(../imagenes/camaras.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;  
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: $naranja-pixel;
+}
+
+.containerContacto > .footer{
+    opacity: 95%;
+}
+
+.contacto__titulo{
+    color: white;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background-color: #c1c6cc;
+}
+/*datos de contacto*/
+.contacto__div{
+    width: 100%;
+    height: 50px;
+}
+
+.contacto__datos{
+    color: $naranja-pixel;
+    background-color: white;
+    text-align: center;
+    padding: 10px 0px;
+    font-weight: bold;
+    border: solid;
+    border-right: 1px;
+    border-left: 1px;
+    background-image: url(../imagenes/clavealta.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;  
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media (max-width:520px) {
+    .contacto__datos{
+        background-image: url(../imagenes/clavealta2.jpg);
+        background-position: center;
+        background-size: 900px 720px;
+    }    
+}
+
+.bigicon {
+    font-size: 35px;
+    color: $naranja-pixel;
+}

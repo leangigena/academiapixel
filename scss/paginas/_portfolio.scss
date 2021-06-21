@@ -1,0 +1,104 @@
+.containerPortfolio{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio{
+    color: white;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background-color: #c1c6cc;
+}
+
+.parrafoPortfolio{
+    padding: 30px;
+    background-color: #EBECED;
+    text-align: center;
+    padding: 20px 20px;
+    padding-left: 60%;
+    border: solid $naranja-pixel;
+    border-right: 1px;
+    border-left: 1px;
+    background-image: url(../imagenes/CLAVEALTAgato.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media (max-width:520px) {
+    .contacto__datos{
+        background-image: url(../imagenes/clavealta2.jpg);
+        background-position: center;
+        background-size: 900px 720px;
+    }    
+    .parrafoPortfolio{
+        padding-right: 20px;
+        padding-left: 30%;
+    }
+
+}
+
+.contenedorImagenes{
+    width: 100%;
+    margin: auto;
+}
+
+.galeria img{
+    width: 100%;
+}
+
+.galeria{
+    margin: 5px;    
+
+    :hover{
+        cursor: pointer;
+        transform: scale(1.1,1);
+        transition: all 0s ease;
+        cursor: pointer;
+    }
+}
+/*galeria de fotos*/
+.fotos .contenedorImagenes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+@media (min-width:300px) {
+    .fotos .contenedorImagenes{
+        grid-template-columns: repeat(1,100%);
+
+    }    
+}
+
+@media (min-width:520px) {
+    .fotos .contenedorImagenes{
+        grid-template-columns: repeat(2,50%);
+
+    }    
+}
+
+@media (min-width:728px) {
+    .fotos .contenedorImagenes{
+        grid-template-columns: repeat(3,33.3%);
+        
+    }    
+}
+
+@media (min-width:1024px) {
+    .fotos .contenedorImagenes{
+        grid-template-columns: repeat(4,25%);
+    }    
+    .contenedorImagenes{
+        width: 1024px;
+    }
+}    
+@media (min-width:1200px) {
+
+    .contenedorImagenes{
+    width: 1200px;
+}
+}

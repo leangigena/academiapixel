@@ -1,47 +1,12 @@
-header {
-  height: 350px;
-  width: 100%;
-  background-color: white;
-  opacity: 95%; }
-  header .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    height: 250px;
-    padding-top: 20px;
-    padding-bottom: 20px; }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-ul {
-  list-style-type: none;
-  color: #d8af54;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 10px; }
-
-li a {
-  color: #d8af54;
-  font-weight: bold;
-  margin: 10px;
-  text-decoration: none; }
-  li a a:hover {
-    color: khaki;
-    transition: all 0.5s ease;
-    text-decoration: none; }
-
-/*INDEX*/
 .containerIndex {
   width: 100%;
-  margin: 0x auto;
   background-image: url(../imagenes/portada.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
   background-size: cover;
   background-color: #d8af54;
   background-attachment: fixed;
@@ -50,7 +15,6 @@ li a {
   grid-template-columns: repeat(4, 1fr);
   gap: 1.6em; }
 
-/*aside*/
 .aside {
   padding: 5px;
   display: flex;
@@ -103,7 +67,8 @@ li a {
 .parrafo {
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
-  margin: 0px 20px; }
+  margin: 0px 20px;
+  text-align: justify; }
 
 @media screen and (max-width: 1024px) {
   .contenidoIndex {
@@ -144,10 +109,10 @@ li a {
     cursor: pointer;
     opacity: 70%; } }
 
-/*SOBRE NOSOTROS*/
 .containerAbout {
   font-family: 'Montserrat', sans-serif; }
 
+/*imagen de fondo attached*/
 .fotografo {
   width: 100%;
   height: 300px;
@@ -164,13 +129,15 @@ li a {
     background-position: 20%;
     background-size: 900px 720px; } }
 
+/*titulo de la seccion*/
 .laAcademia {
   color: #d8af54;
   font-family: 'Montserrat', sans-serif;
   margin-left: 45px;
   margin-top: 20px;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-weight: bold; }
 
 .parrafoAcademia {
   font-size: 16px;
@@ -178,7 +145,6 @@ li a {
   text-align: justify;
   padding: 50px; }
 
-/*PORTFOLIO*/
 .containerPortfolio {
   font-family: 'Montserrat', sans-serif; }
 
@@ -193,7 +159,28 @@ li a {
   background-color: #c1c6cc; }
 
 .parrafoPortfolio {
-  padding: 30px; }
+  padding: 30px;
+  background-color: #EBECED;
+  text-align: center;
+  padding: 20px 20px;
+  padding-left: 60%;
+  border: solid #d8af54;
+  border-right: 1px;
+  border-left: 1px;
+  background-image: url(../imagenes/CLAVEALTAgato.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+@media (max-width: 520px) {
+  .contacto__datos {
+    background-image: url(../imagenes/clavealta2.jpg);
+    background-position: center;
+    background-size: 900px 720px; }
+  .parrafoPortfolio {
+    padding-right: 20px;
+    padding-left: 30%; } }
 
 .contenedorImagenes {
   width: 100%;
@@ -210,6 +197,7 @@ li a {
     transition: all 0s ease;
     cursor: pointer; }
 
+/*galeria de fotos*/
 .fotos .contenedorImagenes {
   display: grid;
   grid-template-columns: repeat(4, 1fr); }
@@ -236,7 +224,6 @@ li a {
   .contenedorImagenes {
     width: 1200px; } }
 
-/*WORKSHOPS*/
 .containerWorkshops {
   margin: 0px auto;
   width: 100%;
@@ -246,7 +233,8 @@ li a {
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  text-align: justify; }
 
 /*Titulo de cada taller*/
 .talleres {
@@ -309,7 +297,6 @@ li a {
   .divTalleres button {
     border-color: #d8af54; }
 
-/*CONTACTO*/
 .containerContacto {
   width: 100%;
   margin: 0px auto;
@@ -336,13 +323,68 @@ li a {
   padding-left: 30px;
   background-color: #c1c6cc; }
 
+/*datos de contacto*/
 .contacto__div {
   width: 100%;
-  height: 150px; }
+  height: 50px; }
+
+.contacto__datos {
+  color: #d8af54;
+  background-color: white;
+  text-align: center;
+  padding: 10px 0px;
+  font-weight: bold;
+  border: solid;
+  border-right: 1px;
+  border-left: 1px;
+  background-image: url(../imagenes/clavealta.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-size: cover; }
+
+@media (max-width: 520px) {
+  .contacto__datos {
+    background-image: url(../imagenes/clavealta2.jpg);
+    background-position: center;
+    background-size: 900px 720px; } }
 
 .bigicon {
   font-size: 35px;
   color: #d8af54; }
+
+header {
+  height: 350px;
+  width: 100%;
+  background-color: white;
+  opacity: 95%; }
+  header .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+ul {
+  list-style-type: none;
+  color: #d8af54;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px; }
+
+li a {
+  color: #d8af54;
+  font-weight: bold;
+  margin: 10px;
+  text-decoration: none; }
+  li a a:hover {
+    color: khaki;
+    transition: all 0.5s ease;
+    text-decoration: none; }
 
 .formulario {
   background-color: #ECEDEE;
@@ -353,8 +395,6 @@ li a {
     border-color: #d8af54;
     color: #d8af54; }
 
-/*FOOTER*/
-/*Footer fondo blanco*/
 
 .footer,
 .footer__blanco {
