@@ -89,11 +89,12 @@
   .contenidoIndex .contenidoIndex__articulo {
     padding: 20px;
     margin-top: 5px;
-    background: #d8af54;
-    color: white; }
+    background: #ECEDEE;
+    color: gray;
+    font-weight: bold; }
 
 .tituloBienvenidos {
-  color: #fff;
+  color: gray;
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 10px;
